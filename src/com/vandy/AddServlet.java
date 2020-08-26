@@ -3,10 +3,10 @@ package com.vandy;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 public class AddServlet extends HttpServlet {
 
@@ -34,12 +34,22 @@ public class AddServlet extends HttpServlet {
 
 		// redirect
 
-//		res.sendRedirect("sqr?k=" + k);		//Url Rewriting
+		/*
+		 * res.sendRedirect("sqr?k=" + k); //Url Rewriting
+		 */		
 		
 		//Session management
 		
-		HttpSession session = req.getSession();
-		session.setAttribute("k", k);
+		/*
+		 * HttpSession session = req.getSession(); session.setAttribute("k", k);
+		 * 
+		 * res.sendRedirect("sqr");
+		 */
+		
+		//Cookies
+		
+		Cookie cookie = new Cookie("k", k+"");
+		res.addCookie(cookie);
 		
 		res.sendRedirect("sqr");
 	}
