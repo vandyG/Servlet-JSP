@@ -11,4 +11,14 @@
   	<url-pattern>/add</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>squareServlet</servlet-name>
+  	<servlet-class>com.vandy.SqrServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>squareServlet</servlet-name>
+  	<url-pattern>/sqr</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
