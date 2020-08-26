@@ -18,6 +18,8 @@ public class AddServlet extends HttpServlet {
 		
 		int k = i + j;
 		
+		System.out.println("result is " + j);
+		
 	}
 
 }
