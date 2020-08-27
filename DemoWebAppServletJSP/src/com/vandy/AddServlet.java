@@ -30,7 +30,8 @@ public class AddServlet extends HttpServlet {
 		/*
 		 * req.setAttribute("k", k);
 		 * 
-		 * RequestDispatcher rd = req.getRequestDispatcher("sqr"); rd.forward(req, res);
+		 * RequestDispatcher rd = req.getRequestDispatcher("sqr"); 
+		 * rd.forward(req, res);
 		 */
 
 		// redirect
@@ -42,7 +43,8 @@ public class AddServlet extends HttpServlet {
 		//Session management
 		
 		/*
-		 * HttpSession session = req.getSession(); session.setAttribute("k", k);
+		 * HttpSession session = req.getSession(); 
+		 * session.setAttribute("k", k);
 		 * 
 		 * res.sendRedirect("sqr");
 		 */
