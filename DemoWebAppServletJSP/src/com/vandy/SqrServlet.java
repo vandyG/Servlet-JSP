@@ -5,11 +5,15 @@ import java.io.PrintWriter;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+@WebServlet(urlPatterns = "/sqr", initParams = @WebInitParam(name = "name", value = "Vandit*Vandit"))
 public class SqrServlet extends HttpServlet {
 
 	/**

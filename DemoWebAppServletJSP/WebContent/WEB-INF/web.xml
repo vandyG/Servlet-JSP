@@ -9,7 +9,7 @@
 		<param-value>Vandit</param-value>
 	</context-param>
 
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>addServlet</servlet-name>
 		<servlet-class>com.vandy.AddServlet</servlet-class>
 	</servlet>
@@ -31,6 +31,6 @@
 	<servlet-mapping>
 		<servlet-name>squareServlet</servlet-name>
 		<url-pattern>/sqr</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 
 </web-app>
